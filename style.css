@@ -80,7 +80,6 @@ img { max-width: 100%; display: block; }
   background: var(--gold-400);
   transform: translateY(-2px);
 }
-
 .btn--ghost {
   border-color: rgba(255, 255, 255, .5);
   color: var(--white);
@@ -89,7 +88,6 @@ img { max-width: 100%; display: block; }
   background: rgba(255, 255, 255, .12);
   border-color: var(--white);
 }
-
 .btn--light {
   background: var(--white);
   color: var(--navy-800);
@@ -132,13 +130,14 @@ img { max-width: 100%; display: block; }
 .topbar__list { display: flex; gap: 22px;}
 .topbar__list a:hover { color: var(--gold-400); }
 
+
+
 /* ---------- Navbar ---------- */
 
 .navbar {
   position: sticky;
   top: 0;
   z-index: 50;
-  /*background: var(--white);*/
   background: var(--navy-800);
   box-shadow: var(--shadow-sm);
 }
@@ -224,35 +223,11 @@ img { max-width: 100%; display: block; }
 .nav-toggle.is-open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
 
 /* ---------- Hero ---------- */
-
 .hero {
-  position: relative;
-  isolation: isolate;
-  padding: 120px 0 96px;
-  color: var(--white);
-  background: var(--navy-800);
-  overflow: hidden;
-}
-
-.hero__bg {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  filter: brightness(90%) sepia(5%);
-  /*  radial-gradient(60% 80% at 85% 20%, rgba(201, 162, 39, .30), transparent 60%),
-    radial-gradient(50% 70% at 10% 90%, rgba(27, 58, 87, .95), transparent 65%),
-    linear-gradient(120deg, #0d1b2a 0%, #16324c 55%, #0d1b2a 100%);*/
-}
-
-.hero__bg::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(rgba(255, 255, 255, .05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, .05) 1px, transparent 1px);
-  background-size: 64px 64px;
-  mask-image: radial-gradient(70% 70% at 50% 40%, #000, transparent);
+  background-image: linear-gradient(180deg, rgba(18, 38, 58, .92) 0%, rgba(18, 38 , 58, .62) 100%),
+  url("assets/image1.jpeg");
+  background-size: cover;
+  background-position: center;
 }
 
 .hero__inner { max-width: 760px; }
@@ -261,6 +236,7 @@ img { max-width: 100%; display: block; }
   display: inline-block;
   padding: 6px 14px;
   margin-bottom: 24px;
+  margin-top: 35px;
   font-size: .75rem;
   font-weight: 600;
   font-weight: bold;
@@ -397,10 +373,7 @@ img { max-width: 100%; display: block; }
   position: relative;
   min-height: 420px;
   border-radius: var(--radius);
-  /*background:
-    linear-gradient(160deg, rgba(13, 27, 42, .25), rgba(13, 27, 42, .8)),
-    repeating-linear-gradient(135deg, #1b3a57 0 26px, #16324c 26px 52px);
-  box-shadow: var(--shadow-md);*/
+  box-shadow: var(--shadow-md);
 }
 
 .split__badge {
